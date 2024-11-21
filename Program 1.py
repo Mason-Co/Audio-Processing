@@ -78,7 +78,7 @@ def main():
           "\n4-Change Frame Rate"
           "\n5-Get Information"))
     if choice == 1:
-        print("Frames: ", audio.duration_seconds * 1000)
+        print("Frames: ", obj2.getnframes())
         start = int(input("Input starting frame: "))
         end = int(input("Input end frame: "))
         clip(start, end)
